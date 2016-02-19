@@ -1,7 +1,6 @@
 var combo = {
 		wrap: document.getElementById('wrap'),
 		div: document.getElementById('combo'),
-		canvas: document.getElementById('combocanvas'),
 		text: document.getElementById('combotext'),
 	},
 	link = document.getElementById('link');

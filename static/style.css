@@ -20,35 +20,54 @@ html {
     background: #0f0; }
   #combo * {
     vertical-align: middle; }
-  #combo .hard {
-    color: #cc2314; }
-  #combo .medium {
-    color: #ffd919; }
-  #combo .light {
-    color: #0daeff; }
-  #combo [class^='icon-cancel'], #combo .icon-right, #combo .icon-plus {
-    color: #666;
-    font-size: 2rem;
-    margin: 0 -0.125em; }
-  #combo .icon-right {
-    font-size: 3rem; }
-  #combo .icon-plus {
-    font-size: 1.5rem; }
-  #combo [class^='text-'] {
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 0.75em;
-    padding: 0.25em; }
-  #combo .text-critical::before {
-    content: 'CA'; }
-  #combo [class^='text-v']::before {
-    content: 'V'; }
-  #combo .text-vskill::after {
-    content: 'Skill'; }
-  #combo .text-vtrigger::after {
-    content: 'Trigger'; }
-  #combo .text-vreversal::after {
-    content: 'Reversal'; }
+
+#chart {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  list-style: none;
+  padding: 0; }
+
+.hard {
+  color: #cc2314; }
+
+.medium {
+  color: #ffd919; }
+
+.light {
+  color: #0daeff; }
+
+[class^='icon-cancel'], .icon-right, .icon-plus {
+  color: #666;
+  font-size: 2rem;
+  margin: 0 -0.125em; }
+
+.icon-right {
+  font-size: 3rem; }
+
+.icon-plus {
+  font-size: 1.5rem; }
+
+[class^='text-'] {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 0.75em;
+  padding: 0.25em; }
+
+.text-critical::before {
+  content: 'CA'; }
+
+[class^='text-v']::before {
+  content: 'V'; }
+
+.text-vskill::after {
+  content: 'Skill'; }
+
+.text-vtrigger::after {
+  content: 'Trigger'; }
+
+.text-vreversal::after {
+  content: 'Reversal'; }
 
 #combocanvas {
   display: none; }

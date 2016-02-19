@@ -24,58 +24,65 @@ html{
 	*{
 		vertical-align: middle;
 	}
-	.hard{
-		color: #cc2314;
+}
+#chart{
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	list-style: none;
+	padding: 0;
+}
+.hard{
+	color: #cc2314;
+}
+.medium{
+	color: #ffd919;
+}
+.light{
+	color: #0daeff;
+}
+[class^='icon-cancel'], .icon-right, .icon-plus{
+	color: #666;
+	font-size: 2rem;
+	margin: 0 -0.125em;
+}
+.icon-right{
+	font-size: 3rem;
+}
+.icon-plus{
+	font-size: 1.5rem;
+}
+[class^='text-']{
+	font-style: normal;
+	font-weight: bolder;
+	font-size: 0.75em;
+	padding: 0.25em;
+	&::before{
 	}
-	.medium{
-		color: #ffd919;
+}
+.text-critical{
+	&::before{
+		content: 'CA';
 	}
-	.light{
-		color: #0daeff;
+}
+[class^='text-v']{
+	&::before{
+		content: 'V';
 	}
-	[class^='icon-cancel'], .icon-right, .icon-plus{
-		color: #666;
-		font-size: 2rem;
-		margin: 0 -0.125em;
+}
+.text-vskill{
+	&::after{
+		content: 'Skill';
 	}
-	.icon-right{
-		font-size: 3rem;
+}
+.text-vtrigger{
+	&::after{
+		content: 'Trigger';
 	}
-	.icon-plus{
-		font-size: 1.5rem;
-	}
-	[class^='text-']{
-		font-style: normal;
-		font-weight: bolder;
-		font-size: 0.75em;
-		padding: 0.25em;
-		&::before{
-		}
-	}
-	.text-critical{
-		&::before{
-			content: 'CA';
-		}
-	}
-	[class^='text-v']{
-		&::before{
-			content: 'V';
-		}
-	}
-	.text-vskill{
-		&::after{
-			content: 'Skill';
-		}
-	}
-	.text-vtrigger{
-		&::after{
-			content: 'Trigger';
-		}
-	}
-	.text-vreversal{
-		&::after{
-			content: 'Reversal';
-		}
+}
+.text-vreversal{
+	&::after{
+		content: 'Reversal';
 	}
 }
 #combocanvas{
