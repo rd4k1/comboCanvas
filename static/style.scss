@@ -1,0 +1,87 @@
+html{
+	font-family: sans-serif;
+}
+#wrap{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#combo{
+	font-size: 4em;
+	min-height: 1em;
+	position: relative;
+	&.over{
+		&:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background: #0f0;
+		}
+	}
+	*{
+		vertical-align: middle;
+	}
+	.hard{
+		color: #cc2314;
+	}
+	.medium{
+		color: #ffd919;
+	}
+	.light{
+		color: #0daeff;
+	}
+	[class^='icon-cancel'], .icon-right, .icon-plus{
+		color: #666;
+		font-size: 2rem;
+		margin: 0 -0.125em;
+	}
+	.icon-right{
+		font-size: 3rem;
+	}
+	.icon-plus{
+		font-size: 1.5rem;
+	}
+	[class^='text-']{
+		font-style: normal;
+		font-weight: bolder;
+		font-size: 0.75em;
+		padding: 0.25em;
+		&::before{
+		}
+	}
+	.text-critical{
+		&::before{
+			content: 'CA';
+		}
+	}
+	[class^='text-v']{
+		&::before{
+			content: 'V';
+		}
+	}
+	.text-vskill{
+		&::after{
+			content: 'Skill';
+		}
+	}
+	.text-vtrigger{
+		&::after{
+			content: 'Trigger';
+		}
+	}
+	.text-vreversal{
+		&::after{
+			content: 'Reversal';
+		}
+	}
+}
+#combocanvas{
+	display: none;
+}
+#combotext{
+	margin-top: 1em;
+	width: 100%;
+}

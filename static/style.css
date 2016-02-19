@@ -1,0 +1,58 @@
+html {
+  font-family: sans-serif; }
+
+#wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#combo {
+  font-size: 4em;
+  min-height: 1em;
+  position: relative; }
+  #combo.over:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #0f0; }
+  #combo * {
+    vertical-align: middle; }
+  #combo .hard {
+    color: #cc2314; }
+  #combo .medium {
+    color: #ffd919; }
+  #combo .light {
+    color: #0daeff; }
+  #combo [class^='icon-cancel'], #combo .icon-right, #combo .icon-plus {
+    color: #666;
+    font-size: 2rem;
+    margin: 0 -0.125em; }
+  #combo .icon-right {
+    font-size: 3rem; }
+  #combo .icon-plus {
+    font-size: 1.5rem; }
+  #combo [class^='text-'] {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 0.75em;
+    padding: 0.25em; }
+  #combo .text-critical::before {
+    content: 'CA'; }
+  #combo [class^='text-v']::before {
+    content: 'V'; }
+  #combo .text-vskill::after {
+    content: 'Skill'; }
+  #combo .text-vtrigger::after {
+    content: 'Trigger'; }
+  #combo .text-vreversal::after {
+    content: 'Reversal'; }
+
+#combocanvas {
+  display: none; }
+
+#combotext {
+  margin-top: 1em;
+  width: 100%; }

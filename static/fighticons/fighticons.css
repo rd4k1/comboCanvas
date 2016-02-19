@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'fighticons';
+    src:    url('fighticons.eot?ehy8xa');
+    src:    url('fighticons.eot?ehy8xa#iefix') format('embedded-opentype'),
+        url('fighticons.ttf?ehy8xa') format('truetype'),
+        url('fighticons.woff?ehy8xa') format('woff'),
+        url('fighticons.svg?ehy8xa#fighticons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'fighticons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-right:before {
+    content: "\e904";
+}
+.icon-plus:before {
+    content: "\e903";
+}
+.icon-back:before {
+    content: "\e600";
+}
+.icon-delta:before {
+    content: "\e601";
+}
+.icon-down:before {
+    content: "\e602";
+}
+.icon-down-back:before {
+    content: "\e603";
+}
+.icon-down-fwd:before {
+    content: "\e604";
+}
+.icon-dp:before {
+    content: "\e605";
+}
+.icon-dpb:before {
+    content: "\e606";
+}
+.icon-punch:before {
+    content: "\e607";
+}
+.icon-kick:before {
+    content: "\e608";
+}
+.icon-fwd:before {
+    content: "\e609";
+}
+.icon-hcb:before {
+    content: "\e60a";
+}
+.icon-hcf:before {
+    content: "\e60b";
+}
+.icon-hcfd:before {
+    content: "\e60c";
+}
+.icon-qcb:before {
+    content: "\e60d";
+}
+.icon-qcf:before {
+    content: "\e60e";
+}
+.icon-up:before {
+    content: "\e60f";
+}
+.icon-up-back:before {
+    content: "\e610";
+}
+.icon-up-fwd:before {
+    content: "\e611";
+}
+.icon-cancel3:before {
+    content: "\e900";
+}
+.icon-cancel2:before {
+    content: "\e901";
+}
+.icon-cancel:before {
+    content: "\e902";
+}
+
